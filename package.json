@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jorgeatgu/stylelint-octuweb#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-stylelint": "^3.2.0"
   }
 }
