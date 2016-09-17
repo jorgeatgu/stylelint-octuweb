@@ -34,7 +34,35 @@ Esto es un poco farragoso de hacer, así que vamos a servirnos de Gulp para hace
 
 Lo primero para aquellos que todavían no han oído hablar sobre Gulp les recomiendo este gran [artículo]() como punto de inicio.
 
+Lo primero es un npm init para generar el package.json, esto lo hacemos desde el terminal.
 
+Ahora vamos a instalar gulp y gulp-stylelint, vamos al terminal y escribimos lo siguiente
+
+```
+npm i gulp gulp-stylelint --save-dev
+```
+
+Ahora vamos a nuestro Gulpfile.js y vamos a crear la tarea para lintear
+
+```
+gulp.task('lint-css', function() {
+  return gulp
+    .src('src/css/*.css')
+    .pipe(stylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+});
+```
+
+Y ahora creamos la tarea default con un watch que este constantemente vigilando los cambios en nuestro directorio de CSS
+
+```
+gulp.task('default', function() {
+  gulp.watch('./src/css/*.css', ['lint-css']);
+});
+``
 
 
 
