@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jorgeatgu/stylelint-octuweb/issues"
   },
-  "homepage": "https://github.com/jorgeatgu/stylelint-octuweb#readme"
+  "homepage": "https://github.com/jorgeatgu/stylelint-octuweb#readme",
+  "devDependencies": {
+    "gulp-stylelint": "^3.2.0"
+  }
 }
