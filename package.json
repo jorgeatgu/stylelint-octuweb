@@ -1,0 +1,22 @@
+{
+  "name": "stylelint-octuweb",
+  "version": "1.0.0",
+  "description": "ejemplo para el articulo de octuweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeatgu/stylelint-octuweb.git"
+  },
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "Jorge Aznar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgeatgu/stylelint-octuweb/issues"
+  },
+  "homepage": "https://github.com/jorgeatgu/stylelint-octuweb#readme"
+}
